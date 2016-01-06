@@ -327,3 +327,72 @@ when weaving
 2016-01-06 13:10:19,339  WARN [Worker-27] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
 2016-01-06 13:10:33,274  WARN [Worker-22] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
 2016-01-06 13:10:33,274  WARN [Worker-22] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:12:41,838  WARN [Worker-21] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:12:41,838  WARN [Worker-21] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:12:57,315  WARN [Worker-20] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:12:57,315  WARN [Worker-20] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:13:06,639  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:13:06,639  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:13:15,786  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:13:15,787  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:14:38,440  WARN [Worker-25] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:14:38,440  WARN [Worker-25] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:15:38,975  WARN [Worker-22] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:15:38,976  WARN [Worker-22] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:15:57,517  WARN [Worker-26] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:15:57,517  WARN [Worker-26] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:21:09,541  WARN [Worker-21] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:21:09,542  WARN [Worker-21] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:28:52,760 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-01-06 13:28:52,760 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-01-06 13:28:52,761 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-01-06 13:29:00,555  WARN [Worker-21] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:29:00,555  WARN [Worker-21] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:29:19,143  WARN [Worker-21] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:29:19,143  WARN [Worker-21] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:30:37,315 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-01-06 13:30:37,315 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-01-06 13:30:37,315 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-01-06 13:31:44,200 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-01-06 13:31:44,200 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-01-06 13:31:44,200 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-01-06 13:32:18,206  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:32:18,207  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:32:56,423  WARN [Worker-27] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:32:56,423  WARN [Worker-27] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:33:36,574  WARN [Worker-22] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:33:36,575  WARN [Worker-22] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:33:49,500  WARN [Worker-20] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:33:49,500  WARN [Worker-20] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:34:32,646  WARN [Worker-26] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:34:32,646  WARN [Worker-26] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:36:33,092  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:36:33,093  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:36:42,064  WARN [Worker-23] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:36:42,064  WARN [Worker-23] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:36:48,805  WARN [Worker-26] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:36:48,805  WARN [Worker-26] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:42:40,277  WARN [Worker-28] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:42:40,277  WARN [Worker-28] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:43:51,750  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:43:51,750  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:47:52,994  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:47:52,995  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:48:30,037  WARN [Worker-22] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:48:30,037  WARN [Worker-22] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:48:43,159  WARN [Worker-21] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:48:43,159  WARN [Worker-21] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:49:05,559  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:49:05,559  WARN [Worker-16] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:52:12,980  WARN [Worker-29] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:52:12,980  WARN [Worker-29] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:52:42,211  WARN [Worker-27] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:52:42,211  WARN [Worker-27] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:53:28,908  WARN [Worker-22] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:53:28,908  WARN [Worker-22] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:53:54,499  WARN [Worker-26] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:53:54,499  WARN [Worker-26] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:54:06,601  WARN [Worker-22] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:54:06,602  WARN [Worker-22] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-06 13:54:47,843  WARN [Worker-27] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-06 13:54:47,844  WARN [Worker-27] - ScalaProject - Project BT-Library-Scala runs on platform default installation.

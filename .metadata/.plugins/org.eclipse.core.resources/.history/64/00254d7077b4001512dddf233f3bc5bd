@@ -1,0 +1,6 @@
+package bt.core.reflections.traits
+
+trait Debug {
+  def debugName = println("Klasa: " + getClass.getSimpleName)
+  def debugVars = println("Klasa: " + getClass.getSimpleName)
+}

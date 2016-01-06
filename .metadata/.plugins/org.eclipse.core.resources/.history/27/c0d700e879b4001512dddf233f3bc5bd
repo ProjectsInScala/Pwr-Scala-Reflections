@@ -1,0 +1,12 @@
+package bt.core.reflections.traits
+import java.lang.reflect.Field
+import scala.reflect
+
+trait Debug {
+  def debugName = println("Klasa: " + getClass.getSimpleName)
+  def debugVars = {
+    var fields: Array[Field] = getClass.getDeclaredFields
+    var a: Int = 3
+  }
+//    println("Pole: " + )
+}
