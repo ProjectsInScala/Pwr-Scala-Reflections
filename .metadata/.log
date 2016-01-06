@@ -1878,3 +1878,1331 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2016-01-06 12:11:55.148 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 4 567 2016-01-06 12:17:50.312
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2016-01-06 12:17:50.312
+!MESSAGE Could not read metadata for 'BT-Library-Java'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'BT-Library-Java' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:902)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:882)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:733)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1588)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2386)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2157)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:140)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2016-01-06 12:17:50.327
+!MESSAGE The project description file (.project) for 'BT-Library-Java' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.jface 2 0 2016-01-06 12:17:55.927
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-01-06 12:17:55.927
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@24945f50,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(ar.com.tadp.prolog.ui.navigate.open.type,Open Prolog Module,
+		Open Prolog Module in a Prolog Editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@550244cb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-01-06 12:17:55.927
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6de4e34a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@79bc29aa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-01-06 12:17:55.927
+!MESSAGE A conflict occurred for CTRL+=:
+Binding(CTRL+=,
+	ParameterizedCommand(Command(org.eclipse.gef.zoom_in,Zoom In,
+		Zoom In,
+		Category(org.eclipse.gef.category.view,View,View,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7f549712,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+=,
+	ParameterizedCommand(Command(Ocaml.stepOverCommand,Step Over,
+		,
+		Category(Ocaml.commandscategory,Ocaml Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@38b7b02f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-06 12:18:21.578
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\koryt'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 5 2016-01-06 12:18:24.827
+!MESSAGE The configuration download failed. Version: 1.0.1.v20150913-0716
+!STACK 0
+org.apache.http.client.HttpResponseException: Service Temporarily Unavailable
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses$ProgressMonitorResponseHandler.handleResponse(Responses.java:49)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses$ProgressMonitorResponseStringHandler.handleResponse(Responses.java:71)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses$ProgressMonitorResponseStringHandler.handleResponse(Responses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses.getContentWithProgress(Responses.java:323)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:74)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 29 2016-01-06 12:18:24.927
+!MESSAGE Startup failed, AERI is disabled until next restart. Version: 1.0.1.v20150913-0716
+!STACK 0
+java.lang.RuntimeException: org.apache.http.client.HttpResponseException: Service Temporarily Unavailable
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:219)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.apache.http.client.HttpResponseException: Service Temporarily Unavailable
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses$ProgressMonitorResponseHandler.handleResponse(Responses.java:49)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses$ProgressMonitorResponseStringHandler.handleResponse(Responses.java:71)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses$ProgressMonitorResponseStringHandler.handleResponse(Responses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses.getContentWithProgress(Responses.java:323)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:74)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	... 3 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-01-06 12:18:32.776
+!MESSAGE Error setting focus to : org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl Point.java
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.setFocus(Control.java:3354)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1056)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1056)
+	at org.eclipse.ui.texteditor.StatusTextEditor.setFocus(StatusTextEditor.java:120)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.setFocus(JavaEditor.java:2395)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.delegateSetFocus(CompatibilityPart.java:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:258)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.focusGui(PartRenderingEngine.java:775)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$2.setFocus(ContributedPartRenderer.java:102)
+	at org.eclipse.swt.custom.CTabItem.setFocus(CTabItem.java:332)
+	at org.eclipse.swt.custom.CTabFolder.setFocus(CTabFolder.java:2602)
+	at org.eclipse.swt.widgets.Control.fixFocus(Control.java:1053)
+	at org.eclipse.swt.widgets.Control.setVisible(Control.java:3859)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3146)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1318)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:72)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:85)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1283)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1236)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1278)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.access$4(StackRenderer.java:1260)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$11.close(StackRenderer.java:1145)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1921)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:335)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2016-01-06 12:19:16.957
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.jar
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-01-06 12:19:58.993
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2016-01-06 12:19:58.993
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:19:58.993
+!MESSAGE "Scala 2.11.7" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:19:58.993
+!MESSAGE "sbt 0.13.8" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:19:58.993
+!MESSAGE "Scala IDE for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-01-06 12:19:58.993
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE Software being installed: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE Software currently installed: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:58.993
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201503031937-b2bbad6 (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201503031937-b2bbad6)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE JDT Weaving for Scala 4.1.1.v-2_11-201507261049-bc34267 (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.1.v-2_11-201507261049-bc34267)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201501121809-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201501121809-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.jar 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201505250839-aeb633d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201505250839-aeb633d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201412161058-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201412161058-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201507042104-ea6a75d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201507042104-ea6a75d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509251052-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509251052-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:58.993
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE From: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.group [4.3.0.v-2_11-201512011536-499c89a]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:58.993
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE From: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.2.0.vfinal-2_11-201509281533-b2cb96d]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:58.993
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE From: JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:58.993
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.3.0.v-2_11-201512011536-499c89a]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-01-06 12:19:59.085
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2016-01-06 12:19:59.085
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:19:59.085
+!MESSAGE "Scala 2.11.7" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:19:59.085
+!MESSAGE "sbt 0.13.8" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:19:59.085
+!MESSAGE "Scala IDE for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-01-06 12:19:59.085
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE Software being installed: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE Software currently installed: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:59.085
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201503031937-b2bbad6 (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201503031937-b2bbad6)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE JDT Weaving for Scala 4.1.1.v-2_11-201507261049-bc34267 (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.1.v-2_11-201507261049-bc34267)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201501121809-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201501121809-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.jar 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201505250839-aeb633d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201505250839-aeb633d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201412161058-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201412161058-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201507042104-ea6a75d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201507042104-ea6a75d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509251052-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509251052-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:59.085
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE From: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.group [4.3.0.v-2_11-201512011536-499c89a]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:59.085
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE From: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.2.0.vfinal-2_11-201509281533-b2cb96d]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:59.085
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE From: JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.085
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.3.0.v-2_11-201512011536-499c89a]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-01-06 12:19:59.105
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2016-01-06 12:19:59.105
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:19:59.106
+!MESSAGE "Scala 2.11.7" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:19:59.106
+!MESSAGE "sbt 0.13.8" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:19:59.106
+!MESSAGE "Scala IDE for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-01-06 12:19:59.106
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE Software being installed: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE Software currently installed: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:59.106
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201503031937-b2bbad6 (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201503031937-b2bbad6)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE JDT Weaving for Scala 4.1.1.v-2_11-201507261049-bc34267 (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.1.v-2_11-201507261049-bc34267)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201501121809-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201501121809-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.jar 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201505250839-aeb633d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201505250839-aeb633d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201412161058-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201412161058-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201507042104-ea6a75d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201507042104-ea6a75d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509251052-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509251052-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:59.106
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE From: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.group [4.3.0.v-2_11-201512011536-499c89a]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:59.106
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE From: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.2.0.vfinal-2_11-201509281533-b2cb96d]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:59.106
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE From: JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.106
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.3.0.v-2_11-201512011536-499c89a]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-01-06 12:19:59.114
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2016-01-06 12:19:59.114
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:19:59.114
+!MESSAGE "Scala 2.11.7" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:19:59.114
+!MESSAGE "sbt 0.13.8" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:19:59.114
+!MESSAGE "Scala IDE for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-01-06 12:19:59.114
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE Software being installed: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE Software currently installed: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:59.114
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201503031937-b2bbad6 (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201503031937-b2bbad6)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE JDT Weaving for Scala 4.1.1.v-2_11-201507261049-bc34267 (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.1.v-2_11-201507261049-bc34267)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201501121809-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201501121809-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.jar 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201505250839-aeb633d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201505250839-aeb633d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201412161058-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201412161058-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201507042104-ea6a75d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201507042104-ea6a75d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509251052-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509251052-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:59.114
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE From: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.group [4.3.0.v-2_11-201512011536-499c89a]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:59.114
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE From: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.2.0.vfinal-2_11-201509281533-b2cb96d]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:19:59.114
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE From: JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:19:59.114
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.3.0.v-2_11-201512011536-499c89a]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-01-06 12:20:24.460
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2016-01-06 12:20:24.461
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:24.461
+!MESSAGE "Scala 2.11.7" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:24.461
+!MESSAGE "sbt 0.13.8" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:24.461
+!MESSAGE "Scala IDE for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-01-06 12:20:24.461
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE Software being installed: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE Software currently installed: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.461
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201503031937-b2bbad6 (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201503031937-b2bbad6)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE JDT Weaving for Scala 4.1.1.v-2_11-201507261049-bc34267 (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.1.v-2_11-201507261049-bc34267)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201501121809-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201501121809-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.jar 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201505250839-aeb633d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201505250839-aeb633d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201412161058-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201412161058-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201507042104-ea6a75d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201507042104-ea6a75d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509251052-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509251052-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.461
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE From: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.group [4.3.0.v-2_11-201512011536-499c89a]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.461
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE From: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.2.0.vfinal-2_11-201509281533-b2cb96d]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.461
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE From: JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.461
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.3.0.v-2_11-201512011536-499c89a]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-01-06 12:20:24.490
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2016-01-06 12:20:24.490
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:24.490
+!MESSAGE "Scala 2.11.7" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:24.490
+!MESSAGE "sbt 0.13.8" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:24.490
+!MESSAGE "Scala IDE for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-01-06 12:20:24.490
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE Software being installed: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE Software currently installed: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.490
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201503031937-b2bbad6 (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201503031937-b2bbad6)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE JDT Weaving for Scala 4.1.1.v-2_11-201507261049-bc34267 (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.1.v-2_11-201507261049-bc34267)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201501121809-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201501121809-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.jar 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201505250839-aeb633d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201505250839-aeb633d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201412161058-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201412161058-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201507042104-ea6a75d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201507042104-ea6a75d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509251052-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509251052-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.490
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE From: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.group [4.3.0.v-2_11-201512011536-499c89a]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.490
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE From: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.2.0.vfinal-2_11-201509281533-b2cb96d]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.490
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE From: JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.490
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.3.0.v-2_11-201512011536-499c89a]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-01-06 12:20:24.507
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2016-01-06 12:20:24.508
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:24.508
+!MESSAGE "Scala 2.11.7" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:24.508
+!MESSAGE "sbt 0.13.8" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:24.508
+!MESSAGE "Scala IDE for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-01-06 12:20:24.508
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE Software being installed: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE Software currently installed: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.508
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201503031937-b2bbad6 (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201503031937-b2bbad6)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE JDT Weaving for Scala 4.1.1.v-2_11-201507261049-bc34267 (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.1.v-2_11-201507261049-bc34267)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201501121809-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201501121809-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.jar 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201505250839-aeb633d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201505250839-aeb633d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201412161058-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201412161058-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201507042104-ea6a75d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201507042104-ea6a75d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509251052-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509251052-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.508
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE From: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.group [4.3.0.v-2_11-201512011536-499c89a]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.508
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE From: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.2.0.vfinal-2_11-201509281533-b2cb96d]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.508
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE From: JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.508
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.3.0.v-2_11-201512011536-499c89a]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-01-06 12:20:24.513
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2016-01-06 12:20:24.513
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:24.513
+!MESSAGE "Scala 2.11.7" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:24.513
+!MESSAGE "sbt 0.13.8" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:24.513
+!MESSAGE "Scala IDE for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-01-06 12:20:24.513
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.513
+!MESSAGE Software being installed: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.513
+!MESSAGE Software currently installed: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.513
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.513
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201503031937-b2bbad6 (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201503031937-b2bbad6)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.513
+!MESSAGE JDT Weaving for Scala 4.1.1.v-2_11-201507261049-bc34267 (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.1.v-2_11-201507261049-bc34267)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.513
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201501121809-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201501121809-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.513
+!MESSAGE JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.jar 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.513
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201505250839-aeb633d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201505250839-aeb633d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.514
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.514
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201412161058-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201412161058-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.514
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201507042104-ea6a75d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201507042104-ea6a75d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.514
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509251052-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509251052-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.514
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.514
+!MESSAGE From: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.514
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.group [4.3.0.v-2_11-201512011536-499c89a]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.514
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.514
+!MESSAGE From: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.514
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.2.0.vfinal-2_11-201509281533-b2cb96d]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:24.514
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.514
+!MESSAGE From: JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:24.514
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.3.0.v-2_11-201512011536-499c89a]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-01-06 12:20:47.700
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2016-01-06 12:20:47.700
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:47.700
+!MESSAGE "Scala IDE for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-01-06 12:20:47.700
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE Software being installed: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE Software currently installed: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.700
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201503031937-b2bbad6 (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201503031937-b2bbad6)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE JDT Weaving for Scala 4.1.1.v-2_11-201507261049-bc34267 (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.1.v-2_11-201507261049-bc34267)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201501121809-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201501121809-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.jar 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201505250839-aeb633d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201505250839-aeb633d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201412161058-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201412161058-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201507042104-ea6a75d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201507042104-ea6a75d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509251052-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509251052-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.700
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE From: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.group [4.3.0.v-2_11-201512011536-499c89a]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.700
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE From: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.2.0.vfinal-2_11-201509281533-b2cb96d]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.700
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE From: JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.700
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.3.0.v-2_11-201512011536-499c89a]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-01-06 12:20:47.711
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2016-01-06 12:20:47.711
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:47.711
+!MESSAGE "Scala IDE for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-01-06 12:20:47.711
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE Software being installed: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE Software currently installed: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.711
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201503031937-b2bbad6 (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201503031937-b2bbad6)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE JDT Weaving for Scala 4.1.1.v-2_11-201507261049-bc34267 (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.1.v-2_11-201507261049-bc34267)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201501121809-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201501121809-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.jar 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201505250839-aeb633d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201505250839-aeb633d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201412161058-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201412161058-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201507042104-ea6a75d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201507042104-ea6a75d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509251052-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509251052-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.711
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE From: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.group [4.3.0.v-2_11-201512011536-499c89a]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.711
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE From: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.2.0.vfinal-2_11-201509281533-b2cb96d]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.711
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE From: JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.711
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.3.0.v-2_11-201512011536-499c89a]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-01-06 12:20:47.727
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2016-01-06 12:20:47.727
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:47.727
+!MESSAGE "Scala IDE for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-01-06 12:20:47.727
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE Software being installed: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE Software currently installed: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.728
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201503031937-b2bbad6 (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201503031937-b2bbad6)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE JDT Weaving for Scala 4.1.1.v-2_11-201507261049-bc34267 (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.1.v-2_11-201507261049-bc34267)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201501121809-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201501121809-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.jar 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201505250839-aeb633d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201505250839-aeb633d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201412161058-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201412161058-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201507042104-ea6a75d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201507042104-ea6a75d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509251052-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509251052-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.728
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE From: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.group [4.3.0.v-2_11-201512011536-499c89a]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.728
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE From: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.2.0.vfinal-2_11-201509281533-b2cb96d]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.728
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE From: JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.728
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.3.0.v-2_11-201512011536-499c89a]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-01-06 12:20:47.731
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2016-01-06 12:20:47.731
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2016-01-06 12:20:47.731
+!MESSAGE "Scala IDE for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-01-06 12:20:47.731
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE Software being installed: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE Software currently installed: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.731
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201503031937-b2bbad6 (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201503031937-b2bbad6)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE JDT Weaving for Scala 4.1.1.v-2_11-201507261049-bc34267 (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.1.v-2_11-201507261049-bc34267)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201501121809-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201501121809-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.jar 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201505250839-aeb633d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201505250839-aeb633d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE JDT Weaving for Scala 4.0.0.v-2_11-201412161058-027320c (org.scala-ide.sdt.weaving.feature.feature.jar 4.0.0.v-2_11-201412161058-027320c)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE JDT Weaving for Scala 4.1.0.v-2_11-201507042104-ea6a75d (org.scala-ide.sdt.weaving.feature.feature.jar 4.1.0.v-2_11-201507042104-ea6a75d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE JDT Weaving for Scala 4.2.0.vfinal-2_11-201509251052-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.jar 4.2.0.vfinal-2_11-201509251052-b2cb96d)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.731
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE From: Scala IDE for Eclipse 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.group [4.3.0.v-2_11-201512011536-499c89a]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.731
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE From: JDT Weaving for Scala 4.2.0.vfinal-2_11-201509281533-b2cb96d (org.scala-ide.sdt.weaving.feature.feature.group 4.2.0.vfinal-2_11-201509281533-b2cb96d)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.2.0.vfinal-2_11-201509281533-b2cb96d]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-06 12:20:47.731
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE From: JDT Weaving for Scala 4.3.0.v-2_11-201512011536-499c89a (org.scala-ide.sdt.weaving.feature.feature.group 4.3.0.v-2_11-201512011536-499c89a)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-06 12:20:47.731
+!MESSAGE To: org.scala-ide.sdt.weaving.feature.feature.jar [4.3.0.v-2_11-201512011536-499c89a]
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2016-01-06 12:21:07.824
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/artifacts.jar
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-01-06 12:22:56.505
+!MESSAGE Error disposing widget for : org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl Problems
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Widget.removeListener(Widget.java:935)
+	at org.eclipse.swt.dnd.DragSource.onDispose(DragSource.java:574)
+	at org.eclipse.swt.dnd.DragSource.access$1(DragSource.java:570)
+	at org.eclipse.swt.dnd.DragSource$2.handleEvent(DragSource.java:182)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:822)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:460)
+	at org.eclipse.swt.dnd.DragSource$1.handleEvent(DragSource.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:822)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Tree.releaseChildren(Tree.java:3946)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:460)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:177)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.disposeWidget(ContributedPartRenderer.java:272)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:914)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:111)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:914)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:876)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:876)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:883)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:876)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:876)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:876)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1948)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1575)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1542)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1603)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1600)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1149)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1131)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1073)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1414)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1411)
+	at org.eclipse.ui.internal.Workbench.restart(Workbench.java:2661)
+	at org.eclipse.equinox.internal.p2.ui.ProvisioningOperationRunner$1.run(ProvisioningOperationRunner.java:92)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-01-06 12:22:56.572
+!MESSAGE Error disposing widget for : org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl Variables
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Widget.removeListener(Widget.java:935)
+	at org.eclipse.swt.dnd.DragSource.onDispose(DragSource.java:574)
+	at org.eclipse.swt.dnd.DragSource.access$1(DragSource.java:570)
+	at org.eclipse.swt.dnd.DragSource$2.handleEvent(DragSource.java:182)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:822)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:460)
+	at org.eclipse.swt.dnd.DragSource$1.handleEvent(DragSource.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:822)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Tree.releaseChildren(Tree.java:3946)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:460)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:177)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.disposeWidget(ContributedPartRenderer.java:272)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:914)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:876)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:876)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:883)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:876)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:876)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:876)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1948)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1575)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1542)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1603)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1600)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1149)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1131)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1073)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1414)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1411)
+	at org.eclipse.ui.internal.Workbench.restart(Workbench.java:2661)
+	at org.eclipse.equinox.internal.p2.ui.ProvisioningOperationRunner$1.run(ProvisioningOperationRunner.java:92)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2016-01-06 12:22:59.834 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/D:/Clouds/OneDrive/GitHub/2016-Pwr-Scala-Lib/Pwr-Scala-Reflections/ -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2016-01-06 12:23:14.915
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-01-06 12:23:14.916
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6761bb4d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@75fa16cc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-01-06 12:23:14.916
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@105c3bea,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(ar.com.tadp.prolog.ui.navigate.open.type,Open Prolog Module,
+		Open Prolog Module in a Prolog Editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@211b2a2c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-01-06 12:23:14.916
+!MESSAGE A conflict occurred for CTRL+=:
+Binding(CTRL+=,
+	ParameterizedCommand(Command(org.eclipse.gef.zoom_in,Zoom In,
+		Zoom In,
+		Category(org.eclipse.gef.category.view,View,View,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4b4a5691,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+=,
+	ParameterizedCommand(Command(Ocaml.stepOverCommand,Step Over,
+		,
+		Category(Ocaml.commandscategory,Ocaml Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6e236542,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-06 12:23:30.345
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\koryt'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 5 2016-01-06 12:23:30.896
+!MESSAGE The configuration download failed. Version: 1.0.1.v20150913-0716
+!STACK 0
+org.apache.http.client.HttpResponseException: Service Temporarily Unavailable
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses$ProgressMonitorResponseHandler.handleResponse(Responses.java:49)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses$ProgressMonitorResponseStringHandler.handleResponse(Responses.java:71)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses$ProgressMonitorResponseStringHandler.handleResponse(Responses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses.getContentWithProgress(Responses.java:323)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:74)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 29 2016-01-06 12:23:31.029
+!MESSAGE Startup failed, AERI is disabled until next restart. Version: 1.0.1.v20150913-0716
+!STACK 0
+java.lang.RuntimeException: org.apache.http.client.HttpResponseException: Service Temporarily Unavailable
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:219)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.apache.http.client.HttpResponseException: Service Temporarily Unavailable
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses$ProgressMonitorResponseHandler.handleResponse(Responses.java:49)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses$ProgressMonitorResponseStringHandler.handleResponse(Responses.java:71)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses$ProgressMonitorResponseStringHandler.handleResponse(Responses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Responses.getContentWithProgress(Responses.java:323)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:74)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	... 3 more
+
+!ENTRY org.eclipse.ui.workbench 4 2 2016-01-06 12:55:44.489
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.jface.resource.FontRegistry.calculateDefaultFont(FontRegistry.java:521)
+	at org.eclipse.jface.resource.FontRegistry.defaultFontRecord(FontRegistry.java:565)
+	at org.eclipse.jface.resource.FontRegistry.getFontRecord(FontRegistry.java:676)
+	at org.eclipse.jface.resource.FontRegistry.get(FontRegistry.java:616)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator$DecorationHelper.decorateFontAndColour(GitLightweightDecorator.java:408)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator$DecorationHelper.decorate(GitLightweightDecorator.java:379)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:205)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:178)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui 4 4 2016-01-06 12:55:44.574
+!MESSAGE Exception in Decorator. The 'Git' decorator will be disabled.
+
+!ENTRY org.eclipse.ui 4 4 2016-01-06 12:55:44.583
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.jface.resource.FontRegistry.calculateDefaultFont(FontRegistry.java:521)
+	at org.eclipse.jface.resource.FontRegistry.defaultFontRecord(FontRegistry.java:565)
+	at org.eclipse.jface.resource.FontRegistry.getFontRecord(FontRegistry.java:676)
+	at org.eclipse.jface.resource.FontRegistry.get(FontRegistry.java:616)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator$DecorationHelper.decorateFontAndColour(GitLightweightDecorator.java:408)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator$DecorationHelper.decorate(GitLightweightDecorator.java:379)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:205)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:178)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.scala-ide.sdt.core 1 0 2016-01-06 12:59:22.287
+!MESSAGE Timeout while resolving hyperlink in D:\Clouds\OneDrive\GitHub\2016-Pwr-Scala-Lib\Pwr-Scala-Reflections\BT-Library-Scala\src\bt\core\reflections\elementary\Point.scala at: offset: 3, length: 0
+
+!ENTRY org.eclipse.ui 4 0 2016-01-06 13:03:14.746
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.WorkbenchPage.busyShowView(WorkbenchPage.java:1270)
+	at org.eclipse.ui.internal.WorkbenchPage$12.run(WorkbenchPage.java:4211)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:4207)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:4187)
+	at org.eclipse.ui.internal.quickaccess.ViewElement.execute(ViewElement.java:71)
+	at org.eclipse.ui.internal.quickaccess.SearchField$2.handleElementSelected(SearchField.java:179)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents.handleSelection(QuickAccessContents.java:460)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents.access$0(QuickAccessContents.java:450)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents$6.mouseUp(QuickAccessContents.java:617)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:220)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)

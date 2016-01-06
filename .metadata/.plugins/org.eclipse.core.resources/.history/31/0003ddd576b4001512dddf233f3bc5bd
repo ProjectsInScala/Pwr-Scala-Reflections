@@ -1,0 +1,5 @@
+package bt.core.reflections.traits
+
+trait Debug {
+  def msg = println("message : I've been mixed in to " + getClass.getSimpleName)
+}
