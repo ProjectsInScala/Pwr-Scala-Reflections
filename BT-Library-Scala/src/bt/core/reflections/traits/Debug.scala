@@ -10,7 +10,11 @@ trait Debug {
       
     for(value : Field <- fields ) {
       value setAccessible true
+      
       println("Pole: " + value.getName+ " => " + value.getType.getTypeName+ ", " + value.get(this))
+      
+      if ( value isAccessible )
+        value setAccessible false      
     }
   }
 }
