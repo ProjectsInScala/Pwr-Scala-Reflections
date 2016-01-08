@@ -568,3 +568,40 @@ when weaving
 2016-01-07 17:56:05,127  WARN [Worker-12] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
 2016-01-07 17:56:05,162  WARN [Worker-12] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
 2016-01-07 17:56:05,162  WARN [Worker-12] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-07 17:56:38,747  WARN [Worker-14] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-07 17:56:38,748  WARN [Worker-14] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-08 21:18:10,816 ERROR [main] - System.err - [org.eclipse.jdt.launching] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.jdt.launching.JavaRuntime
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-01-08 21:18:10,924 ERROR [main] - System.err - [org.eclipse.debug.core] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.debug.core.ILaunchesListener
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-01-08 21:18:13,219  WARN [main] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-08 21:18:13,219  WARN [main] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-08 21:18:13,236  WARN [main] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-08 21:18:13,236  WARN [main] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-08 21:18:25,722 ERROR [main] - System.err - [org.eclipse.jdt.debug.ui] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.jdt.internal.debug.ui.actions.RunToLineAdapter
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-01-08 21:18:25,821 ERROR [main] - System.err - [org.eclipse.jdt.debug] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.jdt.debug.core.IJavaHotCodeReplaceListener
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-01-08 21:18:41,724 ERROR [main] - System.err - [org.eclipse.jdt.junit] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.jdt.internal.junit.ui.JUnitQuickFixProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-01-08 21:19:59,608  WARN [Worker-4] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-08 21:19:59,608  WARN [Worker-4] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-08 21:19:59,677  WARN [Worker-4] - ScalaProject - Project BT-Library-Scala has platform default sourceLevel.
+2016-01-08 21:19:59,677  WARN [Worker-4] - ScalaProject - Project BT-Library-Scala runs on platform default installation.
+2016-01-08 21:20:20,903  WARN [main] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2016-01-08 21:21:37,672  WARN [main] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.

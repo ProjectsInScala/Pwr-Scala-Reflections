@@ -9,14 +9,11 @@ trait Debug {
     var fields: Array[Field] = getClass.getDeclaredFields
       
     for(value : Field <- fields ) {
-      var wasWaccessible = value isAccessible()
       value setAccessible true
       
-      println("Pole: " + value.getName+ 
-          " => " + value.getType.getTypeName+ 
-          ", " + value.get(this))
+      println("Pole: " + value.getName+ " => " + value.getType.getTypeName+ ", " + value.get(this))
       
-      if ( !wasWaccessible )
+      if ( value isAccessible )
         value setAccessible false      
     }
   }
